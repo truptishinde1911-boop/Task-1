@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Interactive Navbar</title>
-
-    
+    <title>My Stopwatch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Hello! This is my Stopwatch</h1>
+        <p id="time">00:00:00</p>
 
-    
-    <nav id="navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+        <div class="buttons">
+            <button id="start"> Start</button>
+            <button id="pause"> Pause</button>
+            <button id="reset"> Reset</button>
+            <button id="lap"> Lap</button>
+        </div>
 
-    
-    <div class="content">
-        <h1>Welcome!!</h1>
-        <p>Scroll down to see the navbar change.</p>
-        <div style="height:1200px"></div>
+        <div class="laps-box">
+            <h3>Laps:</h3>
+            <ul id="laps"></ul>
+        </div>
     </div>
 
-    
     <script src="script.js"></script>
-
 </body>
 </html>
